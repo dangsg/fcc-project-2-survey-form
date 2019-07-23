@@ -1,0 +1,47 @@
+body {
+	background-color: lightyellow;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	color: red;
+}
+
+#survey-form {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 80%;
+	margin: auto;
+	background-color: lightgreen;
+	padding: 10px;
+}
+
+.left-side, .right-side {
+	width: 50%;
+	box-sizing: border-box;
+	margin: 5px 0px;
+}
+
+.left-side {
+	text-align: right;
+	padding-right: 30px;
+}
+
+.right-side {
+	
+}
+
+ul {
+	list-style-type: none;
+	padding: 0; 
+	margin: 0;
+}
+
+/*#dropdown {
+	width: 25%
+}*/
+	
+

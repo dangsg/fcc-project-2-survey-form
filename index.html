@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Survey form</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<h1 id="title">Survey form</h1>
+		<p id="description">Tell me more about you!</p>
+	</header>
+	<main>
+		<form id="survey-form">
+			<label for="name" id="name-label" class="left-side">*Name:</label>
+			<div class="right-side">
+			<input type="text" name="name" id="name" required placeholder="Name...">
+		</div>
+
+			<label for="email" id="email-label" class="left-side">*Email:</label>
+			<div class="right-side">
+			<input type="email" name="email" id="email" required placeholder="Email...">
+		</div>
+
+			<label for="number" id="number-label" class="left-side">*Age:</label>
+			<div class="right-side">
+			<input type="number" name="number" id="number" min="18" max="35" placeholder="Select age">
+		</div>
+
+			<label for="dropdown" class="left-side">Position:</label>
+			<div class="right-side">
+			<select id="dropdown">
+				<option value="all">All</option>	
+				<option value="goalkeeper">Goalkeeper</option>	
+				<option value="defender">Denfender</option>	
+				<option value="midfielder">Midfielder</option>	
+				<option value="attacker">Attacker</option>	
+			</select>
+		</div>
+
+			<label class="left-side">Gender:</label>
+			<div class="right-side">
+				
+			<label for="male">Male
+				<input type="radio" name="gender" id="male" class="gender" value="male">
+			</label>
+			<label for="female">Female
+				<input type="radio" name="gender" id="female" class="gender" value="female">
+			</label>
+		</div>
+
+			<label class="left-side">Skills:</label>
+			<div class="right-side">
+			<ul id="skill">
+				<li>
+					<label>
+						<input type="checkbox" name="skill1" value="control">Control
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" name="skill2" value="pass">Pass
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" name="skill3" value="shoot">Shoot
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" name="skill4" value="aerial">Aerial
+					</label>
+				</li>
+				<li>
+					<label>
+						<input type="checkbox" name="skill5" value="leadership">Leadership
+					</label>
+				</li>
+			</ul>
+		</div>
+
+			<label for="suggest" class="left-side">Suggest:</label>
+			<div class="right-side">
+			<textarea id="suggest" placeholder="Any suggest here..." class="right-side" rows="4"></textarea>
+		</div>
+		<label class="left-side"></label>
+		<div class="right-side">
+			<input type="submit" id="submit">
+		</div>
+		</form>
+
+	</main>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
